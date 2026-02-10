@@ -7,20 +7,18 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="org.example.agendabd.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="694.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.agendabd.Controller">
    <children>
-      <TableView fx:id="tvTelefonos" layoutX="575.0" layoutY="24.0" prefHeight="670.0" prefWidth="575.0">
+      <TableView fx:id="tvTelefonos" layoutX="575.0" layoutY="24.0" prefHeight="335.0" prefWidth="575.0">
          <columns>
-            <TableColumn fx:id="colTelId" prefWidth="75.0" text="ID" />
-            <TableColumn fx:id="colTelPersonaId" prefWidth="250.0" text="PersonaID" />
-            <TableColumn fx:id="colTelNumero" prefWidth="250.0" text="Teléfono" />
+            <TableColumn fx:id="colTelId" prefWidth="151.0" text="ID" />
+            <TableColumn fx:id="colTelNumero" prefWidth="423.0" text="Teléfono" />
          </columns>
       </TableView>
       <TableView fx:id="tvPersonas" layoutY="24.0" prefHeight="670.0" prefWidth="575.0">
         <columns>
-          <TableColumn fx:id="colPersonaId" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="colPersonaNombre" prefWidth="250.0" text="Nombre" />
-            <TableColumn fx:id="colPersonaDireccion" prefWidth="250.0" text="Dirección" />
+          <TableColumn fx:id="colPersonaId" prefWidth="141.0" text="ID" />
+          <TableColumn fx:id="colPersonaNombre" prefWidth="433.0" text="Nombre" />
         </columns>
       </TableView>
       <TextField alignment="CENTER" prefHeight="25.0" prefWidth="575.0" text="Personas" />
@@ -39,5 +37,14 @@
       </Button>
       <Button fx:id="btnAddTel" layoutX="1150.0" layoutY="260.0" mnemonicParsing="false" onAction="#onAgregarTelefono" prefHeight="25.0" prefWidth="50.0" text="+ Tel" />
       <Button fx:id="btnRemTel" layoutX="1150.0" layoutY="285.0" mnemonicParsing="false" onAction="#onQuitarTelefono" prefHeight="25.0" prefWidth="50.0" text="- Tel" />
+      <TextField alignment="CENTER" layoutX="575.0" layoutY="359.0" prefHeight="25.0" prefWidth="575.0" text="Direcciones" />
+      <TableView fx:id="tvDirecciones" layoutX="575.0" layoutY="384.0" prefHeight="309.0" prefWidth="575.0">
+         <columns>
+            <TableColumn fx:id="colDirID" prefWidth="175.0" text="ID" />
+            <TableColumn fx:id="colDirDireccion" prefWidth="399.0" text="Dirección" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnAddDir" layoutX="1150.0" layoutY="467.0" mnemonicParsing="false" onAction="#onAltaDireccion" prefHeight="25.0" prefWidth="50.0" text="+ Dir" />
+      <Button fx:id="btnDelDir" layoutX="1150.0" layoutY="492.0" mnemonicParsing="false" onAction="#onBajaDireccion" prefHeight="25.0" prefWidth="50.0" text="- Dir" />
    </children>
 </AnchorPane>
