@@ -13,10 +13,4 @@ public class TelefonoFila {
     public int getId() {
         return id;
     }
-    public int getPersonaId() {
-        return personaID;
-    }
-    public String getTelefono() {
-        return telefono;
-    }
 }
