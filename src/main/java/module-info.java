@@ -4,7 +4,12 @@ module org.example.agendabd {
     requires java.sql;
     requires org.mariadb.jdbc;
 
+    opens UI to javafx.fxml;
+    opens domain to javafx.fxml;
 
-    opens org.example.agendabd to javafx.fxml;
-    exports org.example.agendabd;
+    exports UI;
+    exports domain;
+    exports servicio;
+    exports repositorio;
+    exports database;
 }
